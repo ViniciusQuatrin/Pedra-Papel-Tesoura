@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="pedra-papel-tesoura-jogo-de-mao-estilo-pop-art-vetor_703393-3145.png">
+        <title>Pedra Papel Tesoura</title>
     </head>
     <body>
         <header>
@@ -12,22 +14,32 @@
                 <h1 style="text-align: center;">Pedra, papel ou tesoura!</h1>
                 <h3 class="resultado"></h3>
                 <hr>
-            </div>
+            </div> <!--back-->
         </header>
-           
-        
+           <!--area de jogo-->
         <div class="align">
             <div class="player-options">
+                <h3 class="nameP"></h3>
                 <div><img opt="pedra" src="rock.png" /></div>
                 <div><img opt="papel" src="paper.png" /></div>
                 <div><img opt="tesoura" src="scisor.png" /></div>
-            </div>
+            </div> <!--player-options-->
+            
+            <div class="score">
+                <h4 class="labelps">Score Jogador:</h4>
+                <h4 class="playerScore">0</h4>
+                
+                <h4 class="labelbs">Score Bot:</h4>
+                <h4 class="inimigoScore">0</h4>
+            </div> <!--score-->
+
             <div class="enemy-options">
+                <h3>Bot</h3>
                 <div><img opt="pedra" src="rock.png" /></div>
                 <div><img opt="papel" src="paper.png" /></div>
                 <div><img opt="tesoura" src="scisor.png" /></div>
-            </div>
-    </div>
+            </div> <!--enemy-options-->
+        </div> <!--align-->
         <script src="functions.js"></script>
 
     </body>
